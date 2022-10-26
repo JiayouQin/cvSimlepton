@@ -32,14 +32,14 @@ import cvsimpleton as cvs
 
 
 class FunClass():
-	def __init__(self):
-		self.images = cvs.list_images('./')
-		self.img = cvs.imread(self.images[0])
+    def __init__(self):
+        self.images = cvs.list_images('./')
+        self.img = cvs.imread(self.images[0])
 
-	def have_fun(self):
-		print(self.img)
-		cvs.imshow('self.img')
-		k = cv.waitKey(0)
+    def have_fun(self):
+        print(self.img)
+        cvs.imshow('self.img')
+        k = cv.waitKey(0)
 
 fun = FunClass()
 fun.have_fun()
