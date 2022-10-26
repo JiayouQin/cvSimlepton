@@ -49,3 +49,20 @@ img  = cvs.imread(fun.images[1])
 cvs.imshow('img')
 cv.waitKey(0)
 ```
+
+Use converge function:
+'''
+path = 'myOwnPath'
+k_size = 15
+images = cvs.list_images(path)
+print(images )
+
+for i in range(len(images)):
+    image = cv.imread(images[i])
+    result = cvs.converge(image,k_size)
+    for name in ['image', 'result', ]:
+        cvs.imshow(name)
+    k = cv.waitKey(0)
+    if k == 27:
+        break
+'''
