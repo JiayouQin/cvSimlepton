@@ -6,6 +6,8 @@ A Simple module that integrates some functions to make your life easier with ope
     window
     imshow          WIP, passing in on image variable name in string type, variable name will be displayed as title. Resizable window as default.
     utility
+    converge        use eitehr mean or gaussian kernel to make a high pass filter, low frequency signal will be merged into average color. 
+    		    (https://github.com/JiayouQin/Python-projects/tree/master/17%20Image%20Balancing)
     list_images     return all image files in the directory including sub directories in a list
     imread          identical to openCV imread but supports UTF-8 formatted string path
     imwrite         identical to openCV imwrite but supports UTF-8 formatted string path
