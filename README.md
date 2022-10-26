@@ -51,7 +51,7 @@ cv.waitKey(0)
 ```
 
 Use converge function:
-'''
+```python
 path = 'myOwnPath'
 k_size = 15
 images = cvs.list_images(path)
@@ -65,4 +65,4 @@ for i in range(len(images)):
     k = cv.waitKey(0)
     if k == 27:
         break
-'''
+```
