@@ -8,6 +8,7 @@ def imshow(_input,named=True,window_flag=cv.WINDOW_NORMAL):
 	var_dict = frame.f_locals
 
 	if type(_input) == str:
+		try:
 			vars = _input.split('.')
 			print(vars)
 			ref = var_dict[vars[0]]
@@ -19,6 +20,7 @@ def imshow(_input,named=True,window_flag=cv.WINDOW_NORMAL):
 			if named:
 				cv.namedWindow(_input,window_flag)
 			cv.imshow(_input,ref)
+		except:
 			return
 	if type(_input) == tuple or type(_input) == list:
 		for i in range(len(_input)):
